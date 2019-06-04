@@ -1,0 +1,11 @@
+C:\Users\yoshi\AppData\Local\Temporary Projects\Part\bin\Release\Part.exe
+C:\Users\yoshi\AppData\Local\Temporary Projects\Part\bin\Release\Part.pdb
+C:\Users\yoshi\AppData\Local\Temporary Projects\Part\bin\Release\Part.xml
+C:\Users\yoshi\AppData\Local\Temporary Projects\Part\obj\x86\Release\Part.Resources.resources
+C:\Users\yoshi\AppData\Local\Temporary Projects\Part\obj\x86\Release\Part.vbproj.GenerateResource.Cache
+C:\Users\yoshi\AppData\Local\Temporary Projects\Part\obj\x86\Release\Part.exe
+C:\Users\yoshi\AppData\Local\Temporary Projects\Part\obj\x86\Release\Part.xml
+C:\Users\yoshi\AppData\Local\Temporary Projects\Part\obj\x86\Release\Part.pdb
+C:\Users\yoshi\documents\visual studio 2010\Projects\Part\Part\obj\x86\Release\Part.exe
+C:\Users\yoshi\documents\visual studio 2010\Projects\Part\Part\obj\x86\Release\Part.xml
+C:\Users\yoshi\documents\visual studio 2010\Projects\Part\Part\obj\x86\Release\Part.pdb
