@@ -1,8 +1,0 @@
-C:\Users\yoshi\AppData\Local\Temporary Projects\Part\bin\Debug\Part.exe
-C:\Users\yoshi\AppData\Local\Temporary Projects\Part\bin\Debug\Part.pdb
-C:\Users\yoshi\AppData\Local\Temporary Projects\Part\bin\Debug\Part.xml
-C:\Users\yoshi\AppData\Local\Temporary Projects\Part\obj\x86\Debug\Part.Resources.resources
-C:\Users\yoshi\AppData\Local\Temporary Projects\Part\obj\x86\Debug\Part.vbproj.GenerateResource.Cache
-C:\Users\yoshi\AppData\Local\Temporary Projects\Part\obj\x86\Debug\Part.exe
-C:\Users\yoshi\AppData\Local\Temporary Projects\Part\obj\x86\Debug\Part.xml
-C:\Users\yoshi\AppData\Local\Temporary Projects\Part\obj\x86\Debug\Part.pdb
