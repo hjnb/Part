@@ -52,6 +52,9 @@
     <Reference Include="ADBox">
       <HintPath>..\..\..\adBox\ADBox\ADBox\bin\Release\ADBox.dll</HintPath>
     </Reference>
+    <Reference Include="Part, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <ExecutableExtension>.exe</ExecutableExtension>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -75,6 +78,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExDataGridView.Designer.vb">
+      <DependentUpon>ExDataGridView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExDataGridView.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="topForm.vb">
       <SubType>Form</SubType>
     </Compile>

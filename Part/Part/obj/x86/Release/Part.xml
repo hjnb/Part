@@ -6,7 +6,20 @@ Part
 </name>
 </assembly>
 <members>
-<member name="M:Part.Util.EnableDoubleBuffering(System.Windows.Forms.Control)">
+<member name="P:Part.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Part.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Part.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Part.Util.EnableDoubleBuffering(System.Windows.Forms.Control)">
 	<summary>
  コントロールのDoubleBufferedプロパティをTrueにする
  </summary>
@@ -96,25 +109,99 @@ Part
  時間コンボボックス初期設定
  </summary>
 	<remarks></remarks>
-</member><member name="M:Part.topForm.loadNamList(System.String)">
+</member><member name="M:Part.topForm.loadNamBox">
 	<summary>
- 氏名リスト読み込み
+ 氏名ボックス設定
  </summary>
-	<param name="ymStr"></param>
 	<remarks></remarks>
-</member><member name="P:Part.My.Resources.Resources.ResourceManager">
+</member><member name="M:Part.topForm.loadNamList">
 	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:Part.My.Resources.Resources.Culture">
+ 氏名リスト設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.clearInput">
 	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:Part.My.Resources.Resources">
+ 入力内容クリア
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.ymBox_keyDownEnter(System.Object,System.EventArgs)">
 	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
+ 年月ボックスエンターキーイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.initDgvPart">
+	<summary>
+ データグリッドビュー初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.dgv_CellPainting(System.Object,System.Windows.Forms.DataGridViewCellPaintingEventArgs)">
+	<summary>
+ CellPainting
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.settingYoubi">
+	<summary>
+ 設定年月の曜日を表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.dgvPart_CellEndEdit(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ セル編集終了イベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.calcWorkTime">
+	<summary>
+ 勤務時間計算
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.timeBox_SelectedValueChanged(System.Object,System.EventArgs)">
+	<summary>
+ 時間ボックス値変更イベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.tyoBox_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ 調整ボックスKeyDownイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.btnRegist_Click(System.Object,System.EventArgs)">
+	<summary>
+ 登録ボタンクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.btnDelete_Click(System.Object,System.EventArgs)">
+	<summary>
+ 削除ボタンクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.btnPrint_Click(System.Object,System.EventArgs)">
+	<summary>
+ 印刷ボタンクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.btnCopy_Click(System.Object,System.EventArgs)">
+	<summary>
+ 前月コピーボタンクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
 </member>
 </members>
 </doc>

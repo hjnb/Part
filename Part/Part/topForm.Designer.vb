@@ -22,9 +22,9 @@ Partial Class topForm
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.dgvPart = New System.Windows.Forms.DataGridView()
         Me.namListBox = New System.Windows.Forms.ListBox()
         Me.btnRegist = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
@@ -36,8 +36,10 @@ Partial Class topForm
         Me.rbtnPreview = New System.Windows.Forms.RadioButton()
         Me.namBox = New System.Windows.Forms.ComboBox()
         Me.timeBox = New System.Windows.Forms.ComboBox()
-        Me.tyoBox = New System.Windows.Forms.TextBox()
-        Me.AdBox1 = New ADBox.adBox()
+        Me.cyoBox = New System.Windows.Forms.TextBox()
+        Me.ymBox = New ADBox.adBox()
+        Me.timeLabel = New System.Windows.Forms.Label()
+        Me.dgvPart = New Part.ExDataGridView(Me.components)
         CType(Me.dgvPart, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,23 +63,15 @@ Partial Class topForm
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "氏名"
         '
-        'dgvPart
-        '
-        Me.dgvPart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvPart.Location = New System.Drawing.Point(78, 60)
-        Me.dgvPart.Name = "dgvPart"
-        Me.dgvPart.RowTemplate.Height = 21
-        Me.dgvPart.Size = New System.Drawing.Size(341, 573)
-        Me.dgvPart.TabIndex = 4
-        '
         'namListBox
         '
         Me.namListBox.BackColor = System.Drawing.SystemColors.Control
+        Me.namListBox.Font = New System.Drawing.Font("ＭＳ Ｐゴシック", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.namListBox.FormattingEnabled = True
-        Me.namListBox.ItemHeight = 12
+        Me.namListBox.ItemHeight = 15
         Me.namListBox.Location = New System.Drawing.Point(449, 87)
         Me.namListBox.Name = "namListBox"
-        Me.namListBox.Size = New System.Drawing.Size(104, 388)
+        Me.namListBox.Size = New System.Drawing.Size(118, 379)
         Me.namListBox.TabIndex = 5
         '
         'btnRegist
@@ -120,7 +114,7 @@ Partial Class topForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("MS UI Gothic", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label3.Location = New System.Drawing.Point(166, 638)
+        Me.Label3.Location = New System.Drawing.Point(164, 643)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(37, 15)
         Me.Label3.TabIndex = 10
@@ -130,7 +124,7 @@ Partial Class topForm
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("MS UI Gothic", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label4.Location = New System.Drawing.Point(282, 638)
+        Me.Label4.Location = New System.Drawing.Point(288, 643)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(47, 15)
         Me.Label4.TabIndex = 11
@@ -160,45 +154,71 @@ Partial Class topForm
         '
         'namBox
         '
+        Me.namBox.Font = New System.Drawing.Font("MS UI Gothic", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.namBox.FormattingEnabled = True
-        Me.namBox.Location = New System.Drawing.Point(289, 19)
+        Me.namBox.Location = New System.Drawing.Point(289, 17)
         Me.namBox.Name = "namBox"
-        Me.namBox.Size = New System.Drawing.Size(145, 20)
+        Me.namBox.Size = New System.Drawing.Size(145, 23)
         Me.namBox.TabIndex = 14
         '
         'timeBox
         '
+        Me.timeBox.Font = New System.Drawing.Font("MS UI Gothic", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.timeBox.FormattingEnabled = True
-        Me.timeBox.Location = New System.Drawing.Point(445, 19)
+        Me.timeBox.Location = New System.Drawing.Point(445, 17)
         Me.timeBox.Name = "timeBox"
-        Me.timeBox.Size = New System.Drawing.Size(122, 20)
+        Me.timeBox.Size = New System.Drawing.Size(122, 23)
         Me.timeBox.TabIndex = 15
         '
-        'tyoBox
+        'cyoBox
         '
-        Me.tyoBox.Location = New System.Drawing.Point(215, 636)
-        Me.tyoBox.Name = "tyoBox"
-        Me.tyoBox.Size = New System.Drawing.Size(56, 19)
-        Me.tyoBox.TabIndex = 16
+        Me.cyoBox.Font = New System.Drawing.Font("MS UI Gothic", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.cyoBox.ImeMode = System.Windows.Forms.ImeMode.Disable
+        Me.cyoBox.Location = New System.Drawing.Point(213, 640)
+        Me.cyoBox.Name = "cyoBox"
+        Me.cyoBox.Size = New System.Drawing.Size(56, 22)
+        Me.cyoBox.TabIndex = 16
+        Me.cyoBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'AdBox1
+        'ymBox
         '
-        Me.AdBox1.dateText = "04"
-        Me.AdBox1.Location = New System.Drawing.Point(122, 9)
-        Me.AdBox1.Mode = 1
-        Me.AdBox1.monthText = "06"
-        Me.AdBox1.Name = "AdBox1"
-        Me.AdBox1.Size = New System.Drawing.Size(105, 35)
-        Me.AdBox1.TabIndex = 17
-        Me.AdBox1.yearText = "2019"
+        Me.ymBox.dateText = "05"
+        Me.ymBox.Location = New System.Drawing.Point(122, 9)
+        Me.ymBox.Mode = 1
+        Me.ymBox.monthText = "06"
+        Me.ymBox.Name = "ymBox"
+        Me.ymBox.Size = New System.Drawing.Size(105, 35)
+        Me.ymBox.TabIndex = 17
+        Me.ymBox.yearText = "2019"
+        '
+        'timeLabel
+        '
+        Me.timeLabel.AutoSize = True
+        Me.timeLabel.Font = New System.Drawing.Font("ＭＳ Ｐゴシック", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.timeLabel.Location = New System.Drawing.Point(358, 644)
+        Me.timeLabel.Name = "timeLabel"
+        Me.timeLabel.Size = New System.Drawing.Size(0, 15)
+        Me.timeLabel.TabIndex = 19
+        Me.timeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'dgvPart
+        '
+        Me.dgvPart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvPart.Location = New System.Drawing.Point(78, 55)
+        Me.dgvPart.Name = "dgvPart"
+        Me.dgvPart.RowTemplate.Height = 21
+        Me.dgvPart.Size = New System.Drawing.Size(342, 580)
+        Me.dgvPart.TabIndex = 18
         '
         'topForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(810, 687)
-        Me.Controls.Add(Me.AdBox1)
-        Me.Controls.Add(Me.tyoBox)
+        Me.Controls.Add(Me.timeLabel)
+        Me.Controls.Add(Me.dgvPart)
+        Me.Controls.Add(Me.ymBox)
+        Me.Controls.Add(Me.cyoBox)
         Me.Controls.Add(Me.timeBox)
         Me.Controls.Add(Me.namBox)
         Me.Controls.Add(Me.rbtnPrint)
@@ -210,7 +230,6 @@ Partial Class topForm
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnRegist)
         Me.Controls.Add(Me.namListBox)
-        Me.Controls.Add(Me.dgvPart)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "topForm"
@@ -222,7 +241,6 @@ Partial Class topForm
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents dgvPart As System.Windows.Forms.DataGridView
     Friend WithEvents namListBox As System.Windows.Forms.ListBox
     Friend WithEvents btnRegist As System.Windows.Forms.Button
     Friend WithEvents btnDelete As System.Windows.Forms.Button
@@ -234,7 +252,9 @@ Partial Class topForm
     Friend WithEvents rbtnPreview As System.Windows.Forms.RadioButton
     Friend WithEvents namBox As System.Windows.Forms.ComboBox
     Friend WithEvents timeBox As System.Windows.Forms.ComboBox
-    Friend WithEvents tyoBox As System.Windows.Forms.TextBox
-    Friend WithEvents AdBox1 As ADBox.adBox
+    Friend WithEvents cyoBox As System.Windows.Forms.TextBox
+    Friend WithEvents ymBox As ADBox.adBox
+    Friend WithEvents dgvPart As Part.ExDataGridView
+    Friend WithEvents timeLabel As System.Windows.Forms.Label
 
 End Class
