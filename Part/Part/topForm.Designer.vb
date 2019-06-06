@@ -156,6 +156,7 @@ Partial Class topForm
         '
         Me.namBox.Font = New System.Drawing.Font("MS UI Gothic", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.namBox.FormattingEnabled = True
+        Me.namBox.ImeMode = System.Windows.Forms.ImeMode.Hiragana
         Me.namBox.Location = New System.Drawing.Point(289, 17)
         Me.namBox.Name = "namBox"
         Me.namBox.Size = New System.Drawing.Size(145, 23)
@@ -182,7 +183,7 @@ Partial Class topForm
         '
         'ymBox
         '
-        Me.ymBox.dateText = "05"
+        Me.ymBox.dateText = "06"
         Me.ymBox.Location = New System.Drawing.Point(122, 9)
         Me.ymBox.Mode = 1
         Me.ymBox.monthText = "06"
