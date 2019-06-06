@@ -8,6 +8,10 @@
                 Me.ProcessTabKey(keyData)
             End If
             Return Me.ProcessTabKey(keyData)
+        ElseIf keyData = Keys.Back AndAlso (columnName = "Bgn" OrElse columnName = "Fin" OrElse columnName = "Los" OrElse columnName = "Svs") Then
+            CurrentCell.Value = ""
+            BeginEdit(False)
+            Return MyBase.ProcessDialogKey(keyData)
         Else
             Return MyBase.ProcessDialogKey(keyData)
         End If

@@ -195,9 +195,32 @@ Part
 	<param name="sender"></param>
 	<param name="e"></param>
 	<remarks></remarks>
+</member><member name="M:Part.topForm.calcWorkTime4Print(System.String[0:,0:],System.Int32,System.String)">
+	<summary>
+ 勤務時間合計計算（印刷用）
+ </summary>
+	<param name="dataArray">書き込みデータ配列</param>
+	<param name="lastDate">月の日数</param>
+	<param name="cyoTime">調整時間</param>
+	<returns></returns>
+	<remarks></remarks>
 </member><member name="M:Part.topForm.btnCopy_Click(System.Object,System.EventArgs)">
 	<summary>
  前月コピーボタンクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.displayDgvData(System.String,System.String)">
+	<summary>
+ 設定年月の選択氏名のデータ表示
+ </summary>
+	<param name="nam">氏名</param>
+	<param name="ym">年月(yyyy/MM)</param>
+	<remarks></remarks>
+</member><member name="M:Part.topForm.namListBox_SelectedValueChanged(System.Object,System.EventArgs)">
+	<summary>
+ 氏名リスト値変更イベント
  </summary>
 	<param name="sender"></param>
 	<param name="e"></param>
